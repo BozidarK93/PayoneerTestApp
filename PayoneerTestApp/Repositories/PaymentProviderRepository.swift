@@ -8,6 +8,10 @@
 import Foundation
 
 protocol PaymentProviderRepository {
+    /// Gets the list of available payment providers
+    /// - Parameters:
+    ///     - completion: A closure containing an optional error in case of failure obtained from an API client or
+    ///     a list of available payment providers in case of sucess
     func getPaymentProviders(completion: @escaping (Error?, ListResult?) -> Void)
 }
 

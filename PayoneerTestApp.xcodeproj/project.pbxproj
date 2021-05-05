@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9CB07D6B2642C5B4006501B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07D6A2642C5B4006501B5 /* AppDelegate.swift */; };
 		9CB07D6D2642C5B4006501B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07D6C2642C5B4006501B5 /* SceneDelegate.swift */; };
-		9CB07D6F2642C5B4006501B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07D6E2642C5B4006501B5 /* ViewController.swift */; };
+		9CB07D6F2642C5B4006501B5 /* PaymentProviderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07D6E2642C5B4006501B5 /* PaymentProviderViewController.swift */; };
 		9CB07D722642C5B4006501B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB07D702642C5B4006501B5 /* Main.storyboard */; };
 		9CB07D742642C5B7006501B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CB07D732642C5B7006501B5 /* Assets.xcassets */; };
 		9CB07D772642C5B7006501B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CB07D752642C5B7006501B5 /* LaunchScreen.storyboard */; };
@@ -32,6 +32,11 @@
 		9CB07DFF2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DFE2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift */; };
 		9CB07E082642CFEA006501B5 /* PaymentAPIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E072642CFEA006501B5 /* PaymentAPIClientMock.swift */; };
 		9CB07E112642D017006501B5 /* ListResultFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E102642D017006501B5 /* ListResultFixture.swift */; };
+		9CB07E1E2642D687006501B5 /* PaymentProviderViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E1D2642D687006501B5 /* PaymentProviderViewPresenter.swift */; };
+		9CB07E262642D6C2006501B5 /* PaymentProviderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E252642D6C2006501B5 /* PaymentProviderCell.swift */; };
+		9CB07E2C2642DA46006501B5 /* PaymentProviderViewPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E2B2642DA46006501B5 /* PaymentProviderViewPresenterTests.swift */; };
+		9CB07E342642DA60006501B5 /* PaymentProviderViewDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E332642DA60006501B5 /* PaymentProviderViewDelegateMock.swift */; };
+		9CB07E392642DAA7006501B5 /* PaymentProviderRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E382642DAA7006501B5 /* PaymentProviderRepositoryMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +60,7 @@
 		9CB07D672642C5B4006501B5 /* PayoneerTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayoneerTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB07D6A2642C5B4006501B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CB07D6C2642C5B4006501B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CB07D6E2642C5B4006501B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CB07D6E2642C5B4006501B5 /* PaymentProviderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderViewController.swift; sourceTree = "<group>"; };
 		9CB07D712642C5B4006501B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CB07D732642C5B7006501B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CB07D762642C5B7006501B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +88,11 @@
 		9CB07DFE2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderRepositoryTests.swift; sourceTree = "<group>"; };
 		9CB07E072642CFEA006501B5 /* PaymentAPIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAPIClientMock.swift; sourceTree = "<group>"; };
 		9CB07E102642D017006501B5 /* ListResultFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResultFixture.swift; sourceTree = "<group>"; };
+		9CB07E1D2642D687006501B5 /* PaymentProviderViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderViewPresenter.swift; sourceTree = "<group>"; };
+		9CB07E252642D6C2006501B5 /* PaymentProviderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderCell.swift; sourceTree = "<group>"; };
+		9CB07E2B2642DA46006501B5 /* PaymentProviderViewPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderViewPresenterTests.swift; sourceTree = "<group>"; };
+		9CB07E332642DA60006501B5 /* PaymentProviderViewDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderViewDelegateMock.swift; sourceTree = "<group>"; };
+		9CB07E382642DAA7006501B5 /* PaymentProviderRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderRepositoryMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +143,14 @@
 		9CB07D692642C5B4006501B5 /* PayoneerTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9CB07E182642D64B006501B5 /* Views */,
+				9CB07E1C2642D674006501B5 /* Presenters */,
 				9CB07DED2642CE77006501B5 /* Network */,
 				9CB07DD12642CDE8006501B5 /* Repositories */,
 				9CB07DDA2642CE1A006501B5 /* Model */,
 				9CB07D9D2642C637006501B5 /* APIClient */,
 				9CB07D6A2642C5B4006501B5 /* AppDelegate.swift */,
 				9CB07D6C2642C5B4006501B5 /* SceneDelegate.swift */,
-				9CB07D6E2642C5B4006501B5 /* ViewController.swift */,
 				9CB07D702642C5B4006501B5 /* Main.storyboard */,
 				9CB07D732642C5B7006501B5 /* Assets.xcassets */,
 				9CB07D752642C5B7006501B5 /* LaunchScreen.storyboard */,
@@ -151,6 +162,7 @@
 		9CB07D802642C5B7006501B5 /* PayoneerTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9CB07E2A2642DA2C006501B5 /* Presenters */,
 				9CB07DFD2642CFB5006501B5 /* Repositories */,
 				9CB07DBC2642C6FE006501B5 /* APIClient */,
 				9CB07E062642CFD9006501B5 /* Mocks */,
@@ -255,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				9CB07E072642CFEA006501B5 /* PaymentAPIClientMock.swift */,
+				9CB07E332642DA60006501B5 /* PaymentProviderViewDelegateMock.swift */,
+				9CB07E382642DAA7006501B5 /* PaymentProviderRepositoryMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -265,6 +279,31 @@
 				9CB07E102642D017006501B5 /* ListResultFixture.swift */,
 			);
 			path = Fixtures;
+			sourceTree = "<group>";
+		};
+		9CB07E182642D64B006501B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07D6E2642C5B4006501B5 /* PaymentProviderViewController.swift */,
+				9CB07E252642D6C2006501B5 /* PaymentProviderCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CB07E1C2642D674006501B5 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07E1D2642D687006501B5 /* PaymentProviderViewPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9CB07E2A2642DA2C006501B5 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07E2B2642DA46006501B5 /* PaymentProviderViewPresenterTests.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,7 +436,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CB07D6F2642C5B4006501B5 /* ViewController.swift in Sources */,
+				9CB07D6F2642C5B4006501B5 /* PaymentProviderViewController.swift in Sources */,
+				9CB07E262642D6C2006501B5 /* PaymentProviderCell.swift in Sources */,
 				9CB07DA42642C66E006501B5 /* APIResult.swift in Sources */,
 				9CB07D6B2642C5B4006501B5 /* AppDelegate.swift in Sources */,
 				9CB07D6D2642C5B4006501B5 /* SceneDelegate.swift in Sources */,
@@ -410,6 +450,7 @@
 				9CB07DAE2642C6A6006501B5 /* HTTPRequestMethod.swift in Sources */,
 				9CB07DE42642CE45006501B5 /* ApplicableNetwork.swift in Sources */,
 				9CB07DDC2642CE2B006501B5 /* Networks.swift in Sources */,
+				9CB07E1E2642D687006501B5 /* PaymentProviderViewPresenter.swift in Sources */,
 				9CB07DB82642C6DB006501B5 /* APIError.swift in Sources */,
 				9CB07DF62642CF3B006501B5 /* GetPaymentProviders.swift in Sources */,
 			);
@@ -419,6 +460,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB07E392642DAA7006501B5 /* PaymentProviderRepositoryMock.swift in Sources */,
+				9CB07E2C2642DA46006501B5 /* PaymentProviderViewPresenterTests.swift in Sources */,
+				9CB07E342642DA60006501B5 /* PaymentProviderViewDelegateMock.swift in Sources */,
 				9CB07DBE2642C710006501B5 /* APIRequestTests.swift in Sources */,
 				9CB07E082642CFEA006501B5 /* PaymentAPIClientMock.swift in Sources */,
 				9CB07E112642D017006501B5 /* ListResultFixture.swift in Sources */,
