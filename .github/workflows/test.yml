@@ -1,0 +1,57 @@
+# This is a basic workflow to help you get started with Actions
+
+
+name: Test main
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  build-and-test:
+    name: Run logic tests
+    runs-on: macOS-latest
+    steps:
+      - name: Select Xcode
+        run: |
+          sudo xcode-select -switch /Applications/Xcode_12.4.app
+      - name: Checkout branch
+        uses: actions/checkout@v2
+      - name: Install Homebrew packages
+        run: |
+          brew tap thii/xcbeautify https://github.com/thii/xcbeautify.git
+          brew install xcbeautify
+
+      - name: Build PayoneerTestApp
+        run: |
+           set -o pipefail && xcodebuild \
+            -project PayoneerTestApp.xcodeproj \
+            -scheme PayoneerTestApp \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest' \
+            -derivedDataPath './DerivedData' \
+            build-for-testing | xcbeautify
+      - name: Test PayoneerTestApp
+        run: |
+           set -o pipefail && xcodebuild \
+            -project PayoneerTestApp.xcodeproj \
+            -scheme PayoneerTestApp \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 11,OS=latest' \
+            -derivedDataPath './DerivedData' \
+            -enableCodeCoverage YES \
+            test-without-building | xcbeautify
+
+      - name: Test report
+        run: |
+          xcrun xcresulttool merge \
+          `find ./DerivedData/Logs/Test -name "*.xcresult" | head -1` \
+          `find ./DerivedData/Logs/Test -name "*.xcresult" | tail -1` \
+          --output-path ./TestReport/TestReport.xcresult
+      - name: Upload test report as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: TestReport.xcresult
+          path: ./TestReport/
+          if-no-files-found: ignore
