@@ -23,6 +23,15 @@
 		9CB07DB82642C6DB006501B5 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DB72642C6DB006501B5 /* APIError.swift */; };
 		9CB07DBE2642C710006501B5 /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DBD2642C710006501B5 /* APIRequestTests.swift */; };
 		9CB07DC72642C734006501B5 /* APIRequestFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DC62642C734006501B5 /* APIRequestFake.swift */; };
+		9CB07DD32642CE00006501B5 /* PaymentProviderRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DD22642CE00006501B5 /* PaymentProviderRepository.swift */; };
+		9CB07DDC2642CE2B006501B5 /* Networks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DDB2642CE2B006501B5 /* Networks.swift */; };
+		9CB07DE42642CE45006501B5 /* ApplicableNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DE32642CE45006501B5 /* ApplicableNetwork.swift */; };
+		9CB07DE92642CE51006501B5 /* ListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DE82642CE51006501B5 /* ListResult.swift */; };
+		9CB07DF02642CE89006501B5 /* PaymentAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DEF2642CE89006501B5 /* PaymentAPIClient.swift */; };
+		9CB07DF62642CF3B006501B5 /* GetPaymentProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DF52642CF3B006501B5 /* GetPaymentProviders.swift */; };
+		9CB07DFF2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07DFE2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift */; };
+		9CB07E082642CFEA006501B5 /* PaymentAPIClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E072642CFEA006501B5 /* PaymentAPIClientMock.swift */; };
+		9CB07E112642D017006501B5 /* ListResultFixture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB07E102642D017006501B5 /* ListResultFixture.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +74,15 @@
 		9CB07DB72642C6DB006501B5 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		9CB07DBD2642C710006501B5 /* APIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
 		9CB07DC62642C734006501B5 /* APIRequestFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestFake.swift; sourceTree = "<group>"; };
+		9CB07DD22642CE00006501B5 /* PaymentProviderRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderRepository.swift; sourceTree = "<group>"; };
+		9CB07DDB2642CE2B006501B5 /* Networks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networks.swift; sourceTree = "<group>"; };
+		9CB07DE32642CE45006501B5 /* ApplicableNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicableNetwork.swift; sourceTree = "<group>"; };
+		9CB07DE82642CE51006501B5 /* ListResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResult.swift; sourceTree = "<group>"; };
+		9CB07DEF2642CE89006501B5 /* PaymentAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAPIClient.swift; sourceTree = "<group>"; };
+		9CB07DF52642CF3B006501B5 /* GetPaymentProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPaymentProviders.swift; sourceTree = "<group>"; };
+		9CB07DFE2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentProviderRepositoryTests.swift; sourceTree = "<group>"; };
+		9CB07E072642CFEA006501B5 /* PaymentAPIClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAPIClientMock.swift; sourceTree = "<group>"; };
+		9CB07E102642D017006501B5 /* ListResultFixture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResultFixture.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +133,9 @@
 		9CB07D692642C5B4006501B5 /* PayoneerTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				9CB07DED2642CE77006501B5 /* Network */,
+				9CB07DD12642CDE8006501B5 /* Repositories */,
+				9CB07DDA2642CE1A006501B5 /* Model */,
 				9CB07D9D2642C637006501B5 /* APIClient */,
 				9CB07D6A2642C5B4006501B5 /* AppDelegate.swift */,
 				9CB07D6C2642C5B4006501B5 /* SceneDelegate.swift */,
@@ -130,8 +151,11 @@
 		9CB07D802642C5B7006501B5 /* PayoneerTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9CB07DFD2642CFB5006501B5 /* Repositories */,
 				9CB07DBC2642C6FE006501B5 /* APIClient */,
+				9CB07E062642CFD9006501B5 /* Mocks */,
 				9CB07DC52642C725006501B5 /* Fakes */,
+				9CB07E0F2642CFFE006501B5 /* Fixtures */,
 				9CB07D812642C5B7006501B5 /* PayoneerTestAppTests.swift */,
 				9CB07D832642C5B7006501B5 /* Info.plist */,
 			);
@@ -174,6 +198,73 @@
 				9CB07DC62642C734006501B5 /* APIRequestFake.swift */,
 			);
 			path = Fakes;
+			sourceTree = "<group>";
+		};
+		9CB07DD12642CDE8006501B5 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07DD22642CE00006501B5 /* PaymentProviderRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9CB07DDA2642CE1A006501B5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07DDB2642CE2B006501B5 /* Networks.swift */,
+				9CB07DE32642CE45006501B5 /* ApplicableNetwork.swift */,
+				9CB07DE82642CE51006501B5 /* ListResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CB07DED2642CE77006501B5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07DF42642CF24006501B5 /* Requests */,
+				9CB07DEE2642CE7D006501B5 /* API */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9CB07DEE2642CE7D006501B5 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07DEF2642CE89006501B5 /* PaymentAPIClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9CB07DF42642CF24006501B5 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07DF52642CF3B006501B5 /* GetPaymentProviders.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		9CB07DFD2642CFB5006501B5 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07DFE2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9CB07E062642CFD9006501B5 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07E072642CFEA006501B5 /* PaymentAPIClientMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9CB07E0F2642CFFE006501B5 /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				9CB07E102642D017006501B5 /* ListResultFixture.swift */,
+			);
+			path = Fixtures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,10 +402,16 @@
 				9CB07D6B2642C5B4006501B5 /* AppDelegate.swift in Sources */,
 				9CB07D6D2642C5B4006501B5 /* SceneDelegate.swift in Sources */,
 				9CB07DA92642C683006501B5 /* APIRequest.swift in Sources */,
+				9CB07DD32642CE00006501B5 /* PaymentProviderRepository.swift in Sources */,
 				9CB07D9F2642C652006501B5 /* APIClient.swift in Sources */,
+				9CB07DE92642CE51006501B5 /* ListResult.swift in Sources */,
+				9CB07DF02642CE89006501B5 /* PaymentAPIClient.swift in Sources */,
 				9CB07DB32642C6C2006501B5 /* HttpStatusCode.swift in Sources */,
 				9CB07DAE2642C6A6006501B5 /* HTTPRequestMethod.swift in Sources */,
+				9CB07DE42642CE45006501B5 /* ApplicableNetwork.swift in Sources */,
+				9CB07DDC2642CE2B006501B5 /* Networks.swift in Sources */,
 				9CB07DB82642C6DB006501B5 /* APIError.swift in Sources */,
+				9CB07DF62642CF3B006501B5 /* GetPaymentProviders.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +420,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CB07DBE2642C710006501B5 /* APIRequestTests.swift in Sources */,
+				9CB07E082642CFEA006501B5 /* PaymentAPIClientMock.swift in Sources */,
+				9CB07E112642D017006501B5 /* ListResultFixture.swift in Sources */,
 				9CB07DC72642C734006501B5 /* APIRequestFake.swift in Sources */,
 				9CB07D822642C5B7006501B5 /* PayoneerTestAppTests.swift in Sources */,
+				9CB07DFF2642CFC4006501B5 /* PaymentProviderRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
